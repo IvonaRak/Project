@@ -53,8 +53,8 @@ function findMyLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
-let findMyLocation = document.querySelector("#my-location-button");
-findMyLocation.addEventListener("click", findMyLocation);
+let findCurrentLocation = document.querySelector("#my-location-button");
+findCurrentLocation.addEventListener("click", findMyLocation);
 
 let searchForm = document.querySelector("#engine");
 searchForm.addEventListener("submit", handleSubmit);
