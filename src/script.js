@@ -59,4 +59,4 @@ findCurrentLocation.addEventListener("click", findMyLocation);
 let searchForm = document.querySelector("#engine");
 searchForm.addEventListener("submit", handleSubmit);
 let gpsLocationButton = document.querySelector("#my-location-button");
-gpsLocationButton.addEventListener("click", findMyLocation);
+gpsLocationButton.addEventListener("click", getCurrentLocation);
