@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="engine">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Search city..."
+                class="form-control shadow-sm"
+                id="type-city"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control shadow-sm"
+                id="search-Btn"
+              />
+            </div>
+            <div class="col-3">
+              <button class="btn btn-primary w-100" id="my-location-button">My Location</button>
+            </div>
+          </div>
+        </form>
+        <h1 id="city-name"></h1>
+        <div>
+          <div class="row">
+            <div class="col-6">
+              <ul>
+                <li>
+                  <span class="date" id="date"></span>
+                  </li>
+                <li class="description" id="description"></li>
+              </ul>
+              <span class="temperature" id="temperature"></span>
+             <span class="units">
+               <a href="#" id="celsius"> °C</a> |
+              <a href="#" id="fahrenheit"> °F</a>
+              </span>
+            </div>
+            <div class="col-6" id="conditions">
+              <ul>
+                <li>Humidity: <span class="conditions" id="humidity"></span>%</li>
+                <li>Wind: <span class="conditions" id="wind"></span>m/s</li>
+              </ul>
+            </div>
+            <div>
+        <h2>Forecast</h2>
+      </div>
+      <div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-md-6">
+          <div class="col">
+            Monday
+            <div class="forecastIcone">☀</div>
+            <div class="temperatureForecast">20 °C</div>
+          </div>
+          <div class="col">
+            Tuesday
+            <div class="forecastIcone">🌤</div>
+            <div class="temperatureForecast">20 °C</div>
+          </div>
+          <div class="col">
+            Wednesday
+            <div class="forecastIcone">🌧</div>
+            <div class="temperatureForecast">20 °C</div>
+          </div>
+          <div class="col">
+            Friday
+            <div class="forecastIcone">🌥</div>
+            <div class="temperatureForecast">20 °C</div>
+          </div>
+          <div class="col">
+            Saturday
+            <div class="forecastIcone">☁</div>
+            <div class="temperatureForecast">20 °C</div>
+          </div>
+          <div class="col">
+            Sunday
+            <div class="forecastIcone">⛈</div>
+            <div class="temperatureForecast">20 °C</div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+ <a href="">Open source code</a>  by Ivona Raková
+</html>

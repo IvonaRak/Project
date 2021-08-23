@@ -1,0 +1,70 @@
+body {
+  font-family: "Comfortaa", cursive;
+  color: rgb(0, 0, 0);
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+  margin: 10px auto 20px;
+}
+h2 {
+  text-align: center;
+  font-weight: bold;
+  margin: 20px auto 10px;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1;
+  list-style: none;
+  height: 21px;
+}
+.weather-app {
+  background-image: url(../img/partialysunny.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  border: 2px solid;
+  border-color: rgb(179, 179, 179);
+  padding: 15px;
+  margin: 20px auto;
+  box-shadow: 15px 10px 30px 5px rgba(46, 46, 46, 0.2);
+  max-width: 850px;
+}
+.temperature {
+  font-weight: bold;
+  font-size: 40px;
+  margin: 20px auto 10px;
+}
+.col {
+  font-weight: bold;
+  text-align: center;
+  margin: 10px auto;
+  background-color: rgb(202, 202, 202);
+  opacity: 0.6;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  max-width: 130px;
+  max-height: 200px;
+}
+.forecastIcone {
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 10px auto;
+  margin: 10px auto;
+}
+.temperatureForecast {
+  font-weight: 900px;
+}
+#celsius {
+  text-decoration: none;
+}
+#fahrenheit {
+  text-decoration: none;
+}
