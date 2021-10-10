@@ -38,7 +38,7 @@ li {
 }
 .temperature {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 60px;
   margin: 20px auto 10px;
 }
 .col {
@@ -61,6 +61,11 @@ li {
 }
 .temperatureForecast {
   font-weight: 900px;
+}
+
+#icon {
+  width: 90px;
+  margin-top: 10px;
 }
 #celsius {
   text-decoration: none;
