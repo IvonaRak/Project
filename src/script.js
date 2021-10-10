@@ -53,10 +53,23 @@ function findMyLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let fahrenheitTemperature = (14 * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
 let findCurrentLocation = document.querySelector("#my-location-button");
 findCurrentLocation.addEventListener("click", findMyLocation);
 
 let searchForm = document.querySelector("#engine");
 searchForm.addEventListener("submit", handleSubmit);
 let gpsLocationButton = document.querySelector("#my-location-button");
-gpsLocationButton.addEventListener("click", getCurrentLocation);
+gpsLocationButton.addEventListener("click", findMyLocation);
+
+let fajrenheitLink = document.querySelector("#fahrenheit-link");
+fajrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+searchCity("Prague");
+
